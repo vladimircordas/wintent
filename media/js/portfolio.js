@@ -7,6 +7,11 @@
 })(jQuery); // end of jQuery name space
 
 
+
+
+
+
+
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -64,19 +69,34 @@ $("#header-wrapper")
         }, 4000);
     });
 
-
 // SIDEBAR NAVIGATION
-
+/*
     var scrollButton = $('#scroll-links li');
 
     $('#scroll-links li').on('click',function(e){
         e.preventDefault();
+
         for ( var i = 0; i < scrollButton.length; i++ ){
             if ( scrollButton[i] == this ) {
                 $.scrollify.move(i);
             }
         }
+    });     */
+//  NAVIGATION THROUGH MAIN PAGE TITLES 
+    var scrollButtonMain1 = $('#portfolio-ul-1 li');
+
+    $('#portfolio-ul-1 li').on('click',function(e){
+        e.preventDefault();
+
+        for ( var i = 0; i < scrollButtonMain1.length; i++ ){
+
+            if ( scrollButtonMain1[i] == this ) {
+                var i = i + 2;
+                $.scrollify.move(i);
+            }
+        }
     });
+    
 /* ============================================ */
 /*  PAGE TAB ANIMATION ON SCROLL IN TO SECTION  */
 /* ============================================ */
@@ -131,7 +151,7 @@ $(document).ready(function() {
         windowsize = $(window).width();
         if (windowsize < 1081) {
             // DISABLE SCROLLIFY ON MOBILE
-            $.scrollify.disable();
+            
             
             $('.swiper-container').addClass('swiper-container-android swiper-container swiper-container-horizontal');
             $('.swiper-pagination').show();
@@ -143,16 +163,16 @@ $(document).ready(function() {
                 // debugger;
             }
             // SIDEBAR MENU SCROLLING FUNCTION
-            $(".sidebar-nav a").click(function(evn){
+/*            $(".sidebar-nav a").click(function(evn){
                 evn.preventDefault();
                 
                 $('html,body').scrollTo(this.hash, this.hash);
             
-            });
+            });     */
         }
         else {
             // ENABLE SCROLLIFY ON FULLSCREEN
-            $.scrollify.enable();
+            
             if(swiper != null) {
                 $('.swiper-container').each(function(){
                     this.swiper.destroy(true, true);
@@ -171,39 +191,3 @@ $(document).ready(function() {
     });
     onResize();
 });
-
-// SVG BODYMOVING IMPLEMENTATION
-   $('document').ready(function(){
-        var animation = bodymovin.loadAnimation({
-            container: document.getElementById('main-logo'),
-            renderer: 'svg',
-            loop: false,
-            autoplay: true,
-            path: './media/animation/LogoMain.json'
-        });
-
-
-        if ( $.browser.msie || $.browser.msedge ){
-            $("#main-logo").remove();
-            var d1 = document.getElementById('image-wrapper-main');
-                d1.insertAdjacentHTML('beforeend', '<img id="main-logo2" class="image-rectangle-with-path" src="media/img/logo/wintent-main-logo.svg" alt="wintent logo">');
-        }
-        
-    });
-    $('document').ready(function(){
-        var animation2 = bodymovin.loadAnimation({
-            container: document.getElementById('competencies-ferris'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: './media/animation/CompetenciesPage_Wheel.json'
-        });
-
-
-        
-        
-    });
-
-    $('document').ready(function(){
-        $.scrollify.disable();
-    });

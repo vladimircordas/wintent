@@ -3,7 +3,7 @@ $('.button-hamburger').sideNav({
         overflow: 'hidden',
         edge: 'left',
         closeOnClick: true,
-        draggable: true,
+        draggable: true
     }
 );
 

@@ -253,131 +253,6 @@ img.percentage {
 img.work-icon {
     height: 65px;
 }
-
-.logo-cineplex {
-    display: block;
-    background: url(../img/work-rollovers/cineplex.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    text-indent: -15000px;
-    font-size: 0px;
-    line-height: 0px;
-    width: 210px;
-    height: 60px;
-}
-.logo-brookfield {
-    display: block;
-    background: url(../img/work-rollovers/brookfield.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    text-indent: -15000px;
-    font-size: 0px;
-    line-height: 0px;
-    width: 180px;
-    height: 50px;
-}
-.logo-duncancraig {
-    display: block;
-    background: url(../img/work-rollovers/duncancraig.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    text-indent: -15000px;
-    font-size: 0px;
-    line-height: 0px;
-    width: 225px;
-    height: 65px;
-}
-.logo-founders {
-    display: block;
-    background: url(../img/work-rollovers/founders.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    text-indent: -15000px;
-    font-size: 0px;
-    line-height: 0px;
-    width: 220px;
-    height: 55px;
-}
-.logo-5thavenue {
-    display: block;
-    background: url(../img/work-rollovers/5thavenue.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    text-indent: -15000px;
-    font-size: 0px;
-    line-height: 0px;
-    width: 99px;
-    height: 85px;
-}
-.logo-mezzcap {
-    display: block;
-    background: url(../img/work-rollovers/mezzcap.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    text-indent: -15000px;
-    font-size: 0px;
-    line-height: 0px;
-    width: 135px;
-    height: 75px;
-}
-.logo-civil {
-    display: block;
-    background: url(../img/work-rollovers/civilbeer.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    text-indent: -15000px;
-    font-size: 0px;
-    line-height: 0px;
-    width: 214px;
-    height: 65px;
-}
-.logo-lovecalgary {
-    display: block;
-    background: url(../img/work-rollovers/lovecalgary.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    text-indent: -15000px;
-    font-size: 0px;
-    line-height: 0px;
-    width: 270px;
-    height: 45px;
-}
-.logo-gladlybeyond {
-    display: block;
-    background: url(../img/work-rollovers/gladlybeyond.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    text-indent: -15000px;
-    font-size: 0px;
-    line-height: 0px;
-    width: 168px;
-    height: 75px;
-}
-.logo:hover {
-    background-position: center top;
-}
-.item.b.valign-wrapper:hover .logo {
-    background-position: center top;
-}
-
 img.ferris-wintent-white-logo {
     display: block;
     margin: auto;
@@ -485,7 +360,7 @@ button:focus {
     height: 100vh;
     z-index: 3;
     /*margin-bottom: 60px;*/
-
+    
     margin: 0;
 }
 .vh-95 {
@@ -494,7 +369,7 @@ button:focus {
     height: 95vh;
     z-index: 3;
     /*margin-bottom: 60px;*/
-
+    
     margin: 0;
 }
 .vh-5 {
@@ -503,7 +378,7 @@ button:focus {
     height: 5vh;
     z-index: 3;
     /*margin-bottom: 60px;*/
-
+    
     margin: 0;
 }
 .v.full-height {
@@ -631,7 +506,7 @@ a.boxclose {
     line-height: 0px;
     margin-right: 5px;
     margin-top: 10px;
-    padding: 11px 3px;
+    padding: 11px 3px;       
 }
 .boxclose:before {
     content: "×";
@@ -1251,7 +1126,6 @@ div.nav.nav-wrapper {
     margin-top: 120px;
 }
 .employee-hb-det-txt {
-   display: none;
     position: absolute;
     margin-left: 70px;
     margin-top: 70px;
@@ -1354,7 +1228,7 @@ div.nav.nav-wrapper {
         MEZZCAP PORTFOLIO PAGE
 ==================================================== */
 #mezzcap-logo-main {
-
+    
 }
 .mezzcap-icons {
     max-width: 85% !important;
@@ -1363,7 +1237,7 @@ div.nav.nav-wrapper {
         DUNCAN CRAIG PORTFOLIO PAGE
 ==================================================== */
 #duncancraig-logo-main {
-
+   
 }
 .duncancraig-svg-images {
     width: 100%;
@@ -1374,7 +1248,7 @@ div.nav.nav-wrapper {
         DUNCAN CRAIG PORTFOLIO PAGE
 ==================================================== */
 #fifthavenue-logo-main {
-
+    
 }
 /* ====================================================
         CINEPLEX MENU DESIGN
@@ -1382,7 +1256,7 @@ div.nav.nav-wrapper {
 #cineplex-title-logo {
     max-height: 100% !important;
     max-width: 100% !important;
-
+    
     height: auto;
 }
 .cineplex-h5 {
@@ -1694,14 +1568,6 @@ textarea.materialize-textarea {
     background: white;
     border: 2px solid white;
 }
-#container-4 .swiper-pagination-bullet:last-child {
-    background: black;
-    border: 2px solid black;
-}
-#container-4 .swiper-pagination-bullet-active:last-child {
-    background: black;
-    border: 2px solid white;
-}
 #container-4 .swiper-pagination-bullet-active:first-child {
     border-color: black;
 }
@@ -1734,8 +1600,8 @@ textarea.materialize-textarea {
 .wider-process-div {
     width: 76%;
     min-height: 320px;
-
-
+    
+    
 }
 @media screen and (max-width: 1080px) {
     .contact-logo-align {
@@ -1753,13 +1619,13 @@ textarea.materialize-textarea {
         display: flex;
     }
     /* FERRIS WHEEL */
-
+    
     .ferris-wheel-container {
         left: 0px;
     }
 
     /* CONTACT LINES */
-
+    
     .hr-black-m {
         display: none;
     }
@@ -1778,7 +1644,7 @@ textarea.materialize-textarea {
         margin-top: 30px;
     }
     /* CONTACT FORM RESTYLE FOR MOBILE */
-
+    
     .input-field input[type=text] {
         width: 100%;
         margin: 0 0 20px 0;
@@ -1853,8 +1719,9 @@ textarea.materialize-textarea {
     h2.paragraph-white-style,
     h2.paragraph-black-style {
         margin: 0px;
-        width: 285px;
+        width: auto;
     }
+    
     .hr-align {
         margin: 10px 0 20px 0;
     }
@@ -1892,17 +1759,60 @@ textarea.materialize-textarea {
     img.responsive-img {
         max-width: 80%;
     }
+    #portfolio-pagination {
+        bottom: 6vh;
+    }
 }
 @media only screen and (min-width: 1600px) {
     .wider-process-div {
         width: 66% !important;
         min-height: 320px;
-
+        
+    }
+}
+@media only screen and (max-width: 992px) {
+    .text-container {
+        margin: 0;
+    }
+    .main-section-text-padding {
+        padding: 0 150px;
+    }
+    .vh {
+        height: 100%;
+    }
+    .flex {
+        height: auto;
+    }
+    .window-height {
+        height: 100vh;
+    }
+    .grey-paragraph.employee-hb-det-txt,
+    .grey-paragraph.construction-txt {
+        display: none;
+    }
+    #portfolio-pagination {
+        bottom: 6vh;
+    }
+    #container-1,
+    #container-2,
+    #container-3,
+    #container-4,
+    #container-5,
+    #container-6,
+    #container-7,
+    #container-9 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /*padding-top: 60px;*/
+        /*font-family: sans-serif;
+        text-transform: uppercase;*/
     }
 }
 @media only screen and (max-width: 768px) {
     #container-5 {
-        padding: 140px 0 40px 0;
+        padding: 0px 0 0px 0;
     }
     #competencies-logo {
         display: none;
@@ -1924,6 +1834,28 @@ textarea.materialize-textarea {
         border-top: 1px solid #999999;
         border-bottom: 1px solid #999999;
     }
+/* IMAGE AND TEXT FIXES FOR MOBILE */
+    .text-container {
+        margin: 0;
+    }
+    .main-section-text-padding {
+        padding: 0 80px;
+    }
+    .vh {
+        height: 100%;
+    }
+    .flex {
+        height: auto;
+    }
+    .window-height {
+        height: 100vh;
+    }
+    .grey-paragraph.employee-hb-det-txt {
+        display: none;
+    }
+    #portfolio-pagination {
+        bottom: 6vh;
+    }
 }
 /*.responsive-img {
     margin: 0 auto;
@@ -1942,10 +1874,30 @@ textarea.materialize-textarea {
         height: 15vh;
         margin-bottom: 20px;
     }
-    #competencies-ferris {
-        position: absolute;
-        top: 140px;
-        left: -460px;
+/* IMAGE AND TEXT FIXES FOR MOBILE */
+    .text-container {
+        margin: 0;
+    }
+    .main-section-text-padding {
+        padding: 0 40px;
+    }
+    .vh {
+        height: 100%;
+    }
+    .flex {
+        height: auto;
+    }
+    .window-height {
+        height: 100vh;
+    }
+    .grey-paragraph.employee-hb-det-txt {
+        display: none;
+    }
+    #portfolio-pagination {
+        bottom: 6vh;
+    }
+    p.grey-paragraph {
+        font-size: 12px;
     }
 }
 @media only screen and (max-width: 325px) {
@@ -1954,8 +1906,8 @@ textarea.materialize-textarea {
         margin-bottom: 10px;
     }
     .input-field input[type=text],
-    .input-field input[type=email] {
-        height: 2rem;
+    .input-field input[type=email] {  
+        height: 2rem; 
     }
     .footer-item {
         padding: 2px 5px;
