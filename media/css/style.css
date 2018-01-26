@@ -253,7 +253,7 @@ img.percentage {
 img.work-icon {
     height: 65px;
 }
-
+/* CLIENTS LOGO ROLLOVERS */
 .logo-cineplex {
     display: block;
     background: url(../img/work-rollovers/cineplex.png);
@@ -389,13 +389,14 @@ img.ferris-wintent-white-logo {
     height: 268px;*/
     max-width: 72%;
     max-height: 100%;
-    height: 500px;
+    height: 200px;
 }
 #main-logo {
     display: block;
     max-height: 100%;
-    max-width: 100%;
+    max-width: 70%;
     height: 100%;
+    width: 70%;
 }
 #main-logo2 {
     display: block;
@@ -414,13 +415,20 @@ img.ferris-wintent-white-logo {
 }
 .comp-container {
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 700px;
 }
 #competencies-ferris {
-    position: absolute;
+    position: relative;
     top: 0px;
-    left: -960px;
+    left: 0px;
+    overflow: hidden;
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 800px;
+    max-height: 570px;
 }
+
+
 #what-we-do {
     position: relative;
     display: block;
@@ -460,6 +468,7 @@ button {
     text-align: center;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
+    border-radius: 0;
     display: inline-block;
     padding: 1rem 2rem 1.0625rem;
     font-size: 1rem;
@@ -623,7 +632,6 @@ nav .button-hamburger i {
 a.boxclose {
     color: #fff;
     cursor:pointer;
-    display: inline-block;
     float: right;
     font-family: "ProximaNova-Light";
     font-size: 60px;
@@ -1274,7 +1282,6 @@ div.nav.nav-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-items: center;
 }
 .construction-txt {
     position: absolute;
@@ -1353,18 +1360,12 @@ div.nav.nav-wrapper {
 /* ====================================================
         MEZZCAP PORTFOLIO PAGE
 ==================================================== */
-#mezzcap-logo-main {
-
-}
 .mezzcap-icons {
     max-width: 85% !important;
 }
 /* ====================================================
         DUNCAN CRAIG PORTFOLIO PAGE
 ==================================================== */
-#duncancraig-logo-main {
-
-}
 .duncancraig-svg-images {
     width: 100%;
     margin: 0 70px 0 70px;
@@ -1373,9 +1374,7 @@ div.nav.nav-wrapper {
 /* ====================================================
         DUNCAN CRAIG PORTFOLIO PAGE
 ==================================================== */
-#fifthavenue-logo-main {
 
-}
 /* ====================================================
         CINEPLEX MENU DESIGN
 ==================================================== */
@@ -1395,9 +1394,6 @@ div.nav.nav-wrapper {
 /* ====================================================
         FOUNDERS ADVANTAGE CAPITAL DESIGN
 ==================================================== */
-#founders-title-logo {
-
-}
 #founders-advantage-logo-design {
     max-height: 100% !important;
     max-width: 100% !important;
@@ -1419,14 +1415,9 @@ div.nav.nav-wrapper {
     max-width: 95%;
     max-height: 95%
 }
-.svg-gladlybeyond-img {
-}
 /* =====================================================
         LOVE CALGARY
 ===================================================== */
-#love-calgary-title-logo {
-
-}
 @media only screen and (min-width: 601px) {
     .row .col.m5ths {
         width: 20%;
@@ -1892,6 +1883,28 @@ textarea.materialize-textarea {
     img.responsive-img {
         max-width: 80%;
     }
+    /* CLIENTS LOGO ROLLOVERS */
+    .logo-cineplex,
+    .logo-brookfield,
+    .logo-duncancraig,
+    .logo-founders,
+    .logo-5thavenue,
+    .logo-mezzcap,
+    .logo-civil,
+    .logo-lovecalgary,
+    .logo-gladlybeyond {
+        background-position: center top;
+    }
+    .logo:hover {
+        background-position: center top;
+    }
+    .item.b.valign-wrapper:hover .logo {
+        background-position: center top;
+    }
+    #competencies-ferris {
+        max-width: 500px;
+        max-height: 420px;
+    }
 }
 @media only screen and (min-width: 1600px) {
     .wider-process-div {
@@ -1924,6 +1937,10 @@ textarea.materialize-textarea {
         border-top: 1px solid #999999;
         border-bottom: 1px solid #999999;
     }
+    #competencies-ferris {
+        max-width: 600px;
+        max-height: 500px;
+    }
 }
 /*.responsive-img {
     margin: 0 auto;
@@ -1943,9 +1960,7 @@ textarea.materialize-textarea {
         margin-bottom: 20px;
     }
     #competencies-ferris {
-        position: absolute;
-        top: 140px;
-        left: -460px;
+        height: 350px;
     }
 }
 @media only screen and (max-width: 325px) {
@@ -1960,6 +1975,10 @@ textarea.materialize-textarea {
     .footer-item {
         padding: 2px 5px;
     }
+    #competencies-ferris {
+        height: 350px;
+
+    }
 }
 .top-40px {
    top: 40px;
@@ -1967,12 +1986,65 @@ textarea.materialize-textarea {
 .margin-top-40px {
     margin-top: 40px;
 }
-#discover-icon {
+#discover-icon,
+#define-icon,
+#strategize-icon,
+#design-icon,
+#evaluate-icon {
     display: block;
-    position: absolute;
-    left: 500px;
-    top: 500px;
-    padding: 0px 0px 0px 0px;
-    margin: 0 0 10px 0;
-    transform: scale(10, 10);
+    position: relative;
+    height: 100px;
+    margin-left: -30px;
+    margin-top: -20px;
+    overflow: hidden;
+}
+
+
+/* HR LINE ANIMATION */
+hr {
+    width: 0px;
+    -moz-transition: all  500ms linear;
+    -webkit-transition: all  500ms linear;
+    -o-transition: all  500ms linear;
+    transition: all  500ms linear;
+}
+.hr-animation {
+    -webkit-animation: hranimate;
+    -webkit-animation-duration: .7s;
+    animation: hranimate;
+    animation-duration: .7s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes hranimate {
+    from {width: 0px;}
+    to {width: 120px;}
+}
+@keyframes hranimate {
+    from {width: 0px;}
+    to {width: 120px;}
+}
+.hr-process-anim {
+    -webkit-animation: processanimate;
+    -webkit-animation-duration: .5s;
+    animation: processanimate;
+    animation-duration: .5s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes processanimate {
+    from {width: 0px;}
+    to {width: 120px;}
+}
+@keyframes processanimate {
+    from {width: 0px;}
+    to {width: 120px;}
 }
